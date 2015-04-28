@@ -12,5 +12,7 @@ describe(ToDo) do
   describe(".all") do
     it("is empty at first") do
       expect(ToDo.all()).to(eq([]))
+    end
   end
+  
 end

@@ -5,5 +5,9 @@ class ToDo
 
   define_method(:description) do
     @description
-  end    
+  end
+
+  define_singleton_method(:all) do
+    []
+  end     
 end
