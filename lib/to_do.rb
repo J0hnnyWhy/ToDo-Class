@@ -1,4 +1,6 @@
 class ToDo
+  @@all_todo = []
+
   define_method(:initialize) do |description|
     @description = description
   end
@@ -8,6 +10,10 @@ class ToDo
   end
 
   define_singleton_method(:all) do
-    []
-  end     
+    @@all_todo
+  end
+
+  define_method(:save) do
+    @@all_todo.push(self)
+  end
 end
